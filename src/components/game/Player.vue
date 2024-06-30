@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import keeperImage from "@/assets/keeper.png";
 import { useMove } from "@/components/game/player";
 import { usePosition } from "@/hooks/usePosition";

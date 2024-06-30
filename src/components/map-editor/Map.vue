@@ -7,9 +7,9 @@
 </template>
 
 <script setup lang="ts">
-  import MapBlock from "@/components/map-editor/MapBlock.vue";
-  import { useEditorMapStore } from "@/store/editor/map";
+import MapBlock from "@/components/map-editor/MapBlock.vue";
+import { useEditorMapStore } from "@/store/editor/map";
 
-  const { map, initMap } = useEditorMapStore();
-  initMap();
+const { map, initMap } = useEditorMapStore();
+initMap();
 </script>

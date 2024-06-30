@@ -4,7 +4,7 @@
     <Player />
 
     <template v-for="cargo of cargos" :key="cargo.id">
-      <Cargo :cargo="cargo"/>
+      <Cargo :cargo="cargo" />
     </template>
 
     <template v-for="target of targets" :key="target.id">
@@ -21,7 +21,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import Map from "@/components/game/Map.vue";
 import Player from "@/components/game/Player.vue";
 import Cargo from "@/components/game/Cargo.vue";

@@ -19,16 +19,16 @@
   <ElementSelector />
 </template>
 
-<script setup>
-  import Map from "@/components/map-editor/Map.vue";
-  import Player from "@/components/map-editor/Player.vue";
-  import Cargo from "@/components/map-editor/Cargo.vue";
-  import Target from "@/components/map-editor/Target.vue";
-  import ElementSelector from "@/components/map-editor/ElementSelector.vue";
-  import GameDataViewer from "@/components/map-editor/GameDataViewer.vue";
-  import { useEditorCargoStore } from "@/store/editor/cargo";
-  import { useEditorTargetStore } from "@/store/editor/target";
+<script setup lang="ts">
+import Map from "@/components/map-editor/Map.vue";
+import Player from "@/components/map-editor/Player.vue";
+import Cargo from "@/components/map-editor/Cargo.vue";
+import Target from "@/components/map-editor/Target.vue";
+import ElementSelector from "@/components/map-editor/ElementSelector.vue";
+import GameDataViewer from "@/components/map-editor/GameDataViewer.vue";
+import { useEditorCargoStore } from "@/store/editor/cargo";
+import { useEditorTargetStore } from "@/store/editor/target";
 
-  const { cargos } = useEditorCargoStore();
-  const { targets } = useEditorTargetStore();
+const { cargos } = useEditorCargoStore();
+const { targets } = useEditorTargetStore();
 </script>

@@ -13,7 +13,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import floorImage from "@/assets/floor.png";
 import wallImage from "@/assets/wall.png";
 import { useMapStore, MapElement } from "@/store/map.ts";
