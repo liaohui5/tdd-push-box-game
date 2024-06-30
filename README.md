@@ -18,6 +18,10 @@
 
 如果手动测试, 写完后面的功能, 可能还要看下有没有影响前面的功能
 
+## 在线体验地址
+
+- [在线体验](https://liaohui5.github.io/tdd-push-box-game/#/game)
+
 ## 快速开始
 
 ```sh
@@ -25,9 +29,23 @@ git clone https://github.com/liaohui5/tdd-push-box-game ./push-box
 
 cd push-box
 
-pnpm i
+pnpm install
 
-pnpm run dev
+pnpm run dev # http://localhost:8080/tdd-push-box-game/
 
-# http://localhost:8080
+# for unit tests
+pnpm run test
+
+# for unit test coverage
+pnpm run test:coverage
+```
+
+## 注意
+
+因为需要部署到 Github Pages 的原因, 所以 vite 配置是根据 github pages 来修改的, 如果需要部署到自己的 Github Pages 需要修改 vite.config.ts 的 base 选项
+
+```ts
+export default {
+  base: "/your-github-repo-name/",
+};
 ```

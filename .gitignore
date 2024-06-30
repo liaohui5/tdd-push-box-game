@@ -13,7 +13,7 @@ dist-ssr
 *.local
 
 # unit test coverage
-coverage/*
+coverage
 
 # Editor directories and files
 .vscode/*
