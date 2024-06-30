@@ -22,7 +22,7 @@ describe("cargo", () => {
     };
 
     addCargo(createCargo(pos));
-    const targetCargo = findCargoByPos(pos);
+    const targetCargo = findCargoByPos(pos)!;
 
     expect(targetCargo.x).toBe(1);
     expect(targetCargo.y).toBe(1);
